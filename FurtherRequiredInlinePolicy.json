@@ -41,7 +41,7 @@
             "Sid": "VisualEditor5",
             "Effect": "Allow",
             "Action": "codebuild:*",
-            "Resource": "arn:aws:codebuild:*:${AWS_ACCOUNT_ID}:*"
+            "Resource": "arn:aws:codebuild:*:AWS_ACCOUNT_ID:*"
         }
     ]
 }
