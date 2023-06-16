@@ -1,0 +1,47 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "states:*",
+                "databrew:*",
+                "codecommit:ListRepositories",
+                "airflow:GetEnvironment",
+                "airflow:CreateEnvironment"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "codepipeline:*",
+            "Resource": "arn:aws:codepipeline:*:${AWS_ACCOUNT_ID}:*"
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": "lambda:*",
+            "Resource": "arn:aws:lambda:*:${AWS_ACCOUNT_ID}:function:*"
+        },
+        {
+            "Sid": "VisualEditor3",
+            "Effect": "Allow",
+            "Action": "codedeploy:*",
+            "Resource": "arn:aws:codedeploy:*:${AWS_ACCOUNT_ID}:*"
+        },
+        {
+            "Sid": "VisualEditor4",
+            "Effect": "Allow",
+            "Action": "codecommit:*",
+            "Resource": "arn:aws:codecommit:*:${AWS_ACCOUNT_ID}:*"
+        },
+        {
+            "Sid": "VisualEditor5",
+            "Effect": "Allow",
+            "Action": "codebuild:*",
+            "Resource": "arn:aws:codebuild:*:${AWS_ACCOUNT_ID}:*"
+        }
+    ]
+}
