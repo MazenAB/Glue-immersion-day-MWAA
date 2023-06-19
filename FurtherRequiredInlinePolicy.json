@@ -44,7 +44,7 @@
             "Resource": "arn:aws:codebuild:*:AWS_ACCOUNT_ID:*"
         },
                 {
-            "Sid": "VisualEditor0",
+            "Sid": "VisualEditor6",
             "Effect": "Allow",
             "Action": [
                 "cloudtrail:PutEventSelectors",
