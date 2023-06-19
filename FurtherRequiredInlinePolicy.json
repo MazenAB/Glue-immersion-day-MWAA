@@ -42,6 +42,16 @@
             "Effect": "Allow",
             "Action": "codebuild:*",
             "Resource": "arn:aws:codebuild:*:AWS_ACCOUNT_ID:*"
+        },
+                {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "cloudtrail:PutEventSelectors",
+                "cloudtrail:CreateTrail",
+                "cloudtrail:GetEventSelectors"
+            ],
+            "Resource": "arn:aws:cloudtrail:us-east-2:AWS_ACCOUNT_ID:trail/glueworkshop-trail"
         }
     ]
 }
